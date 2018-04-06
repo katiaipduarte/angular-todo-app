@@ -8,8 +8,10 @@ const routes: Routes = [{
 }, {
   path: 'about',
   loadChildren: 'app/about/about.module#AboutModule'
+}, {
+  path: 'todo',
+  loadChildren: 'app/todo-app/todo-app.module#TodoAppModule'
 }];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
