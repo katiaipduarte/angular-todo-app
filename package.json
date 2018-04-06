@@ -9,7 +9,9 @@
     "build:staging": "ng build --aot --env=staging --prod --stats-json",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "create-module-boilerplate" : "npx ng g module home --routing",
+    "create-component-boilerplate": "npx ng g component home"
   },
   "private": true,
   "dependencies": {
