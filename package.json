@@ -10,8 +10,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "create-module-boilerplate" : "npx ng g module home --routing",
-    "create-component-boilerplate": "npx ng g component home"
+    "create-module-boilerplate": "npx ng g module home --routing",
+    "create-component-boilerplate": "npx ng g component home",
+    "setup-redux": "npm install @ngrx/store --save",
+    "install-redux-devTools": "npm install @ngrx/store-devtools --save"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +26,8 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "@ngrx/store": "^5.2.0",
+    "@ngrx/store-devtools": "^5.2.0",
     "bootstrap": "^4.0.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
