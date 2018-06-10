@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store, select } from '@ngrx/store';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
 import { Increment, Decrement } from '@state/counter/counter.actions';
 import { State } from '@state/counter/counter.state';

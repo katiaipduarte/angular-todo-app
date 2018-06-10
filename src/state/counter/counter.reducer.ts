@@ -1,6 +1,7 @@
 import { State, initialState } from './counter.state';
 import { CounterActionTypes, CounterActions } from './counter.actions';
 
+
 export function counterReducer(state = initialState, action: CounterActions): State {
     switch (action.type) {
         case CounterActionTypes.INCREMENT:
@@ -14,6 +15,13 @@ export function counterReducer(state = initialState, action: CounterActions): St
                 ...state,
                 counter: state.counter - 1
             };
+
+        case CounterActionTypes.LOAD_SUCCEEDED: {
+            return {
+                ...state,
+                counter: action.payload.data.counter
+            };
+        }
 
         default: {
             return state;

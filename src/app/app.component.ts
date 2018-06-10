@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { environment } from '@env/environment';
 
 @Component({
@@ -10,7 +9,7 @@ import { environment } from '@env/environment';
 export class AppComponent {
   title = 'app';
 
-  constructor() {
+  constructor () {
     console.log('environment', environment);
   }
 }

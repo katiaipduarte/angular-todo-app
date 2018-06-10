@@ -12,6 +12,7 @@ const routes: Routes = [{
   path: 'todo',
   loadChildren: 'app/todo-app/todo-app.module#TodoAppModule'
 }];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
